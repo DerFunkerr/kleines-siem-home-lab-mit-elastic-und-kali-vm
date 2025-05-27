@@ -118,9 +118,11 @@ Als n채chstes habe ich ein Dashboard erstellt, um die gesammelten Logs im SIEM �
 - Im **Analytics-Tab** habe ich f체r die horizontale Achse die **Zeitstempel (timestamps)** ausgew채hlt
     
 - F체r die vertikale Achse habe ich die **Anzahl der Ereignisse (count)** genutzt
+
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/10.PNG?raw=true)
     
 So konnte ich auf einen Blick die aggregierten Sicherheitsereignisse 체ber die Zeit visualisieren.
+
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/11.PNG?raw=true)
 
 <br><br>

@@ -11,11 +11,13 @@ Dieses Projekt dokumentiert den Aufbau eines eigenen SIEM-Labors mit Kali Linux,
 - Konfiguration eigener und vorgefertigter Erkennungsregeln
 - Reaktion auf Alarme & Incident Response
 
+[Ausführliche Dokumentation aller Schritte](./SIEM%20Home%20Lab.md)
+
 ## 🧠 Fazit
 
 Dieses Lab war ein wertvoller Schritt, um tiefere Einblicke in SIEM-Prozesse und Sicherheitsüberwachung zu gewinnen. Es eignet sich hervorragend als Grundlage für praktisches Lernen im Bereich Security Operations.
 
 ## 📂 Verzeichnis
 
-- `docs/SIEM.md` – [Ausführliche Dokumentation aller Schritte](./SIEM%20Home%20Lab.md)
-- `images/` – Screenshots (bitte hier hinzufügen)
+[Ausführliche Dokumentation aller Schritte](./SIEM%20Home%20Lab.md)
+

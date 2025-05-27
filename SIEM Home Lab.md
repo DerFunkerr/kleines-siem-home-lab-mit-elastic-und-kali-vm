@@ -84,6 +84,7 @@ sudo nmap -A -sV localhost
 
 Dieser Scan erzeugt diverse Netzwerkereignisse, die vom Elastic Agent erfasst und an den SIEM weitergeleitet werden.
 
+
 Anschließend habe ich im **Elastic SIEM Dashboard** unter  **Analytics > Discover** geprüft, ob Alarme ausgelöst wurden.
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/7.PNG?raw=true)
 

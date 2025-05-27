@@ -88,6 +88,7 @@ Dieser Scan erzeugt diverse Netzwerkereignisse, die vom Elastic Agent erfasst un
 Anschließend habe ich im **Elastic SIEM Dashboard** unter  **Analytics > Discover** geprüft, ob Alarme ausgelöst wurden.
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/7.PNG?raw=true)
 
+
 Dort konnte ich die vom Nmap-Scan generierten Ereignisse einsehen und analysieren.
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/8.PNG?raw=true)
 

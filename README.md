@@ -17,5 +17,5 @@ Dieses Lab war ein wertvoller Schritt, um tiefere Einblicke in SIEM-Prozesse und
 
 ## 📂 Verzeichnis
 
-- `docs/SIEM.md` – Ausführliche Dokumentation aller Schritte
+- `docs/SIEM.md` – [Ausführliche Dokumentation aller Schritte](./SIEM%20Home$20Lab.md)
 - `images/` – Screenshots (bitte hier hinzufügen)

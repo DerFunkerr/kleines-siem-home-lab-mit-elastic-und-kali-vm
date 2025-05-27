@@ -98,6 +98,7 @@ msfconsole use exploit/unix/ftp/vsftpd_234_backdoor set RHOST <targetIP> exploit
 ```
 
 Das Ergebnis war eindeutig: **Elastic Defend** erkannte die Aktivität sofort und meldete einen sicherheitsrelevanten Vorfall. Im SIEM erschien ein Alarm mit einem **Risiko-Score von 73** und einer Bewertung als **hoch**.
+
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/9.PNG?raw=true)
 
 Besonders hilfreich war, dass das Dashboard detaillierte Informationen zum Vorfall anzeigte – unter anderem den Pfad zur ausführenden Datei (`/usr/bin/msfconsole`), was auf den Einsatz von Metasploit hinwies.

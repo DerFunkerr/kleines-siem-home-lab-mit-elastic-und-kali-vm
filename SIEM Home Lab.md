@@ -27,7 +27,7 @@ Mein Ziel war es, ein funktionierendes Lab zur Analyse und Erkennung von Sicherh
 Durch dieses Lab konnte ich praxisnah lernen, wie man mit SIEM-Systemen arbeitet, Sicherheitsereignisse analysiert und effektive Überwachungsmechanismen aufsetzt. Es war ein wertvoller Schritt zur Vorbereitung auf reale Aufgaben im Bereich Security Operations.
 
 
-
+<br><br>
 
 ## Schritt 1: Umgebung einrichten
 

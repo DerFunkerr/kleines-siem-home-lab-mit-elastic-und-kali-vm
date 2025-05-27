@@ -173,10 +173,12 @@ Um sicherzugehen, dass meine angelegte Regel funktioniert, habe ich folgende Tes
     
 2. **Alerts im SIEM prüfen**  
     Im Elastic SIEM Dashboard bin ich in den Bereich **„Alerts“** gewechselt und habe kontrolliert, ob durch den Nmap-Scan neue Warnungen generiert wurden.
+
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/17.PNG?raw=true)
     
 3. **E-Mail-Benachrichtigungen überprüfen**  
     Zusätzlich habe ich meinen E-Mail-Posteingang geprüft, um sicherzustellen, dass ich eine Benachrichtigung mit relevanten Informationen zum Scan erhalten habe.
+
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/18.PNG?raw=true)
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/19.PNG?raw=true)
 
@@ -190,6 +192,7 @@ Um die Wirksamkeit vordefinierter Regeln zu testen, habe ich die Regel **„Linu
 
 1. **Regel aktivieren**  
     Im SIEM-Dashboard habe ich die Regel per **Toggle-Schalter** aktiviert.
+
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/20.PNG?raw=true)
     
 2. **Neuen Benutzer anlegen und Berechtigungen erhöhen**  
@@ -202,6 +205,7 @@ Um die Wirksamkeit vordefinierter Regeln zu testen, habe ich die Regel **„Linu
 
 3. **Alert prüfen**  
     Anschließend habe ich im SIEM-Dashboard unter dem Reiter **„Alerts“** kontrolliert, ob der Vorfall erkannt und entsprechend gemeldet wurde.
+
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/22.PNG?raw=true)
 
 So konnte ich verifizieren, dass auch vordefinierte Regeln zuverlässig funktionieren und privilegierte Aktionen sichtbar machen.

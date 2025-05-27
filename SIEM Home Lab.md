@@ -59,9 +59,9 @@ Auf meiner bereits eingerichteten **Kali Linux VM** habe ich den **Elastic Agent
     
 - Die **Elastic Defend-Integration** ausgewählt und eingebunden
 
-![Screenshot](../images/3.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/3.PNG?raw=true)
 - Den bereitgestellten **Installationsbefehl** in die Kali-VM kopiert und ausgeführt  
-![Screenshot](../images/4.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/4.PNG?raw=true)
     
 
 Die Installation des Agents dauerte einige Minuten. Danach habe ich überprüft, ob der Dienst korrekt läuft – mit folgendem Befehl:
@@ -70,7 +70,7 @@ Die Installation des Agents dauerte einige Minuten. Danach habe ich überprüft,
 sudo systemctl status elastic-agent.service
 ```
 
-![Screenshot](../images/5.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/5.PNG?raw=true)
 **Ergebnis:** Der Agent war erfolgreich installiert, aktiv und meine Kali-VM war nun an **Elastic Cloud angebunden** – bereit, Sicherheitsereignisse zu erfassen und weiterzuleiten.
 
 ## Schritt 3: Sicherheitsereignisse erzeugen und SIEM-Logs überwachen
@@ -80,15 +80,15 @@ Um Sicherheitsereignisse zu generieren, habe ich in meiner Kali-VM im Terminal d
 ```bash
 sudo nmap -A -sV localhost
 ```
-![Screenshot](../images/6.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/6.PNG?raw=true)
 Dieser Scan erzeugt diverse Netzwerkereignisse, die vom Elastic Agent erfasst und an den SIEM weitergeleitet werden.
 
 Anschließend habe ich im **Elastic SIEM Dashboard** unter  
 **Analytics > Discover** geprüft, ob Alarme ausgelöst wurden.
-![Screenshot](../images/7.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/7.PNG?raw=true)
 
 Dort konnte ich die vom Nmap-Scan generierten Ereignisse einsehen und analysieren.
-![Screenshot](../images/8.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/8.PNG?raw=true)
 
 
 Anschließend bin ich zum zweiten Testschritt übergegangen, um zu prüfen, ob bei verdächtigem Verhalten ein Alarm ausgelöst wird. Dafür habe ich eine einfache Metasploit-Session gestartet:
@@ -98,7 +98,7 @@ msfconsole use exploit/unix/ftp/vsftpd_234_backdoor set RHOST <targetIP> exploit
 ```
 
 Das Ergebnis war eindeutig: **Elastic Defend** erkannte die Aktivität sofort und meldete einen sicherheitsrelevanten Vorfall. Im SIEM erschien ein Alarm mit einem **Risiko-Score von 73** und einer Bewertung als **hoch**.
-![Screenshot](../images/9.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/9.PNG?raw=true)
 
 Besonders hilfreich war, dass das Dashboard detaillierte Informationen zum Vorfall anzeigte – unter anderem den Pfad zur ausführenden Datei (`/usr/bin/msfconsole`), was auf den Einsatz von Metasploit hinwies.
 
@@ -112,10 +112,10 @@ Als nächstes habe ich ein Dashboard erstellt, um die gesammelten Logs im SIEM �
 - Im **Analytics-Tab** habe ich für die horizontale Achse die **Zeitstempel (timestamps)** ausgewählt
     
 - Für die vertikale Achse habe ich die **Anzahl der Ereignisse (count)** genutzt
-![Screenshot](../images/10.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/10.PNG?raw=true)
     
 So konnte ich auf einen Blick die aggregierten Sicherheitsereignisse über die Zeit visualisieren.
-![Screenshot](../images/11.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/11.PNG?raw=true)
 
 
 ## Schritt 5: Eigene Regeln zur Erkennung von Ereignissen konfigurieren
@@ -130,20 +130,20 @@ Elastic SIEM bietet viele vorgefertigte Regeln, aber ich habe eine eigene Regel 
     
 	    process.args: "nmap"
 
-![Screenshot](../images/12.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/12.PNG?raw=true)
 
 4. Ich habe der Regel einen Namen und eine Beschreibung gegeben und den Schweregrad passend gesetzt.
-![Screenshot](../images/13.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/13.PNG?raw=true)
     
 5. Den Zeitplan habe ich vorerst auf den Standardwerten belassen.
-![Screenshot](../images/14.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/14.PNG?raw=true)
     
 6. Für die Aktion habe ich **E-Mail-Benachrichtigungen** ausgewählt, damit ich im Falle eines Nmap-Scans sofort informiert werde.
-![Screenshot](../images/15.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/15.PNG?raw=true)
     
 
 Dabei habe ich darauf geachtet, dass die E-Mail-Einstellungen korrekt konfiguriert sind, damit die Alerts zuverlässig ankommen.
-![Screenshot](../images/16.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/16.PNG?raw=true)
 
 
 ## Schritt 6: Alerts für eigene Regeln generieren
@@ -159,12 +159,12 @@ Um sicherzugehen, dass meine angelegte Regel funktioniert, habe ich folgende Tes
     
 2. **Alerts im SIEM prüfen**  
     Im Elastic SIEM Dashboard bin ich in den Bereich **„Alerts“** gewechselt und habe kontrolliert, ob durch den Nmap-Scan neue Warnungen generiert wurden.
-![Screenshot](../images/17.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/17.PNG?raw=true)
     
 3. **E-Mail-Benachrichtigungen überprüfen**  
     Zusätzlich habe ich meinen E-Mail-Posteingang geprüft, um sicherzustellen, dass ich eine Benachrichtigung mit relevanten Informationen zum Scan erhalten habe.
-![Screenshot](../images/18.png)
- ![Screenshot](../images/19.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/18.PNG?raw=true)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/19.PNG?raw=true)
 
 Mit diesen Schritten konnte ich bestätigen, dass meine eigene Regel korrekt arbeitet und Alerts zuverlässig ausgelöst werden.
 
@@ -175,7 +175,7 @@ Um die Wirksamkeit vordefinierter Regeln zu testen, habe ich die Regel **„Linu
 
 1. **Regel aktivieren**  
     Im SIEM-Dashboard habe ich die Regel per **Toggle-Schalter** aktiviert.
-![Screenshot](../images/20.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/20.PNG?raw=true)
     
 2. **Neuen Benutzer anlegen und Berechtigungen erhöhen**  
     In der Kali-VM habe ich im Terminal folgende Befehle ausgeführt:
@@ -183,11 +183,11 @@ Um die Wirksamkeit vordefinierter Regeln zu testen, habe ich die Regel **„Linu
 ```bash
     sudo adduser testuser sudo usermod -aG sudo testuser
 ```
-![Screenshot](../images/21.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/21.PNG?raw=true)
 
 3. **Alert prüfen**  
     Anschließend habe ich im SIEM-Dashboard unter dem Reiter **„Alerts“** kontrolliert, ob der Vorfall erkannt und entsprechend gemeldet wurde.
-![Screenshot](../images/22.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/22.PNG?raw=true)
 
 So konnte ich verifizieren, dass auch vordefinierte Regeln zuverlässig funktionieren und privilegierte Aktionen sichtbar machen.
 

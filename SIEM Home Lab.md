@@ -81,10 +81,10 @@ Um Sicherheitsereignisse zu generieren, habe ich in meiner Kali-VM im Terminal d
 sudo nmap -A -sV localhost
 ```
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/6.PNG?raw=true)
+
 Dieser Scan erzeugt diverse Netzwerkereignisse, die vom Elastic Agent erfasst und an den SIEM weitergeleitet werden.
 
-Anschließend habe ich im **Elastic SIEM Dashboard** unter  
-**Analytics > Discover** geprüft, ob Alarme ausgelöst wurden.
+Anschließend habe ich im **Elastic SIEM Dashboard** unter  **Analytics > Discover** geprüft, ob Alarme ausgelöst wurden.
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/7.PNG?raw=true)
 
 Dort konnte ich die vom Nmap-Scan generierten Ereignisse einsehen und analysieren.

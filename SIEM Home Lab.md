@@ -55,7 +55,7 @@ Auf meiner bereits eingerichteten **Kali Linux VM** habe ich den **Elastic Agent
 
 - Über das **Elastic Cloud Dashboard** zur Sektion **"Add Integrations"** navigiert
 
-![Screenshot](../images/2.png)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/2.PNG?raw=true)
     
 - Die **Elastic Defend-Integration** ausgewählt und eingebunden
 

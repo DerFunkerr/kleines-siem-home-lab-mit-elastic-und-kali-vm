@@ -73,6 +73,8 @@ sudo systemctl status elastic-agent.service
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/5.PNG?raw=true)
 **Ergebnis:** Der Agent war erfolgreich installiert, aktiv und meine Kali-VM war nun an **Elastic Cloud angebunden** – bereit, Sicherheitsereignisse zu erfassen und weiterzuleiten.
 
+<br><br>
+
 ## Schritt 3: Sicherheitsereignisse erzeugen und SIEM-Logs überwachen
 
 Um Sicherheitsereignisse zu generieren, habe ich in meiner Kali-VM im Terminal den folgenden Befehl ausgeführt:
@@ -107,6 +109,7 @@ Besonders hilfreich war, dass das Dashboard detaillierte Informationen zum Vorfa
 
 Ich könnte über die Benutzeroberfläche direkt einen Sicherheitsfall eröffnen und den betroffenen Host isolieren. Im Falle eines echten Vorfalls wäre es so möglich, gezielt Gegenmaßnahmen einzuleiten und eine weitere Ausbreitung zu verhindern.
 
+<br><br>
 
 ## Schritt 4: Dashboard zur Visualisierung erstellen
 
@@ -120,6 +123,7 @@ Als nächstes habe ich ein Dashboard erstellt, um die gesammelten Logs im SIEM �
 So konnte ich auf einen Blick die aggregierten Sicherheitsereignisse über die Zeit visualisieren.
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/11.PNG?raw=true)
 
+<br><br>
 
 ## Schritt 5: Eigene Regeln zur Erkennung von Ereignissen konfigurieren
 
@@ -148,6 +152,7 @@ Elastic SIEM bietet viele vorgefertigte Regeln, aber ich habe eine eigene Regel 
 Dabei habe ich darauf geachtet, dass die E-Mail-Einstellungen korrekt konfiguriert sind, damit die Alerts zuverlässig ankommen.
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/16.PNG?raw=true)
 
+<br><br>
 
 ## Schritt 6: Alerts für eigene Regeln generieren
 
@@ -171,6 +176,7 @@ Um sicherzugehen, dass meine angelegte Regel funktioniert, habe ich folgende Tes
 
 Mit diesen Schritten konnte ich bestätigen, dass meine eigene Regel korrekt arbeitet und Alerts zuverlässig ausgelöst werden.
 
+<br><br>
 
 ## Schritt 7: Vorgefertigte Regeln nutzen und Alerts generieren
 

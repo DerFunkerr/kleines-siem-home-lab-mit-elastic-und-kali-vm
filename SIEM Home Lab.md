@@ -142,16 +142,20 @@ Elastic SIEM bietet viele vorgefertigte Regeln, aber ich habe eine eigene Regel 
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/12.PNG?raw=true)
 
 4. Ich habe der Regel einen Namen und eine Beschreibung gegeben und den Schweregrad passend gesetzt.
+
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/13.PNG?raw=true)
     
 5. Den Zeitplan habe ich vorerst auf den Standardwerten belassen.
+
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/14.PNG?raw=true)
     
 6. Für die Aktion habe ich **E-Mail-Benachrichtigungen** ausgewählt, damit ich im Falle eines Nmap-Scans sofort informiert werde.
+
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/15.PNG?raw=true)
     
 
 Dabei habe ich darauf geachtet, dass die E-Mail-Einstellungen korrekt konfiguriert sind, damit die Alerts zuverlässig ankommen.
+
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/16.PNG?raw=true)
 
 <br><br>

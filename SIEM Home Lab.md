@@ -47,7 +47,7 @@ Damit war die Grundlage geschaffen, um den ELK Stack in der Cloud zu nutzen und 
 
 ![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/1.PNG?raw=true)
 
-
+<br><br>
 
 ## Schritt 2: Elastic Agent & Integration einrichten
 

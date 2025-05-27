@@ -45,7 +45,8 @@ Ich habe meine Arbeitsumgebung für das SIEM-Lab vorbereitet. Dazu gehörten fol
 Damit war die Grundlage geschaffen, um den ELK Stack in der Cloud zu nutzen und Kali Linux als Datenquelle zu integrieren.
 
 
-![Nmap Scan](../images/1.PNG)
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/1.PNG?raw=true)
+
 
 
 ## Schritt 2: Elastic Agent & Integration einrichten

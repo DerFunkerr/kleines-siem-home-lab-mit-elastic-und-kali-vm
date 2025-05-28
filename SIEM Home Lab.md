@@ -20,7 +20,8 @@ Mein Ziel war es, ein funktionierendes Lab zur Analyse und Erkennung von Sicherh
 - Eigene Dashboards in Kibana erstellt
     
 - Alarme konfiguriert, um potenzielle Bedrohungen zu erkennen
-    
+
+![Nmap Scan](https://github.com/DerFunkerr/kleines-siem-home-lab-mit-elastic-und-kali-vm/blob/main/images/23.PNG?raw=true)
 
 ### Mein Mehrwert
 
